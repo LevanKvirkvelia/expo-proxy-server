@@ -1,0 +1,36 @@
+{
+  "name": "expo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "supa-types": "bunx supabase gen types --lang=typescript --project-id rnrlqgjmlbicgsizspiz > database.types.ts",
+    "start": "tsx ./index.ts",
+    "dev": "NODE_ENV=development tsx --watch ./index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.705.0",
+    "@hono/node-server": "^1.13.7",
+    "@hono/node-ws": "^1.0.4",
+    "@supabase/supabase-js": "^2.46.2",
+    "@types/mime-types": "^2.1.4",
+    "@types/qrcode-terminal": "^0.12.2",
+    "dotenv": "^16.4.7",
+    "hono": "^4.6.12",
+    "http-proxy-middleware": "^3.0.3",
+    "mime-types": "^2.1.35",
+    "qrcode-terminal": "^0.12.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
